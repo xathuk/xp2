@@ -59,9 +59,12 @@ function theOne() {
 
             //spotify >>>>
             if (data.d.spotify === null) {
-                document.getElementById('listeningto').innerHTML = '<p>Nothing... 😵</p>'
+                document.getElementById('listeningto').innerHTML = ``
             }else {
-                document.getElementById('listeningto').innerHTML = `<p>${data.d.spotify.artist}: ${data.d.spotify.song} 🎶🎶</p>`
+                document.getElementById('listeningto').innerHTML = `
+                <p class='card-desc'>
+                Spotify: <p>${data.d.spotify.artist}: ${data.d.spotify.song} 🎶🎶</p>
+                </p>`
             }
         }
     };
