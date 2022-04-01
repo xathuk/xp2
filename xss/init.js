@@ -66,23 +66,6 @@ function theOne() {
                 Spotify: <p>${data.d.spotify.artist}: ${data.d.spotify.song} 🎶🎶</p>
                 </p>`
             }
-
-            //Playing >>>>
-            if (data.d.active_on_discord_desktop || data.d.active_on_discord_web || data.d.active_on_discord_mobile === true) {
-                if (data.d.activities.length !== 0) {
-                    if (data['d']['activities'][0]['type'] === 0) {
-                        document.getElementById('playing').innerHTML = `
-                        <p class='card-desc'>
-                        Playing: <p>${data['d']['activities'][0]['name']}&nbsp;</p>
-                        </p>`;
-                    } else {
-                        document.getElementById('playing').innerText = ``;
-                    }
-                } else {
-                    document.getElementById('playing').innerText = ``;
-                }
-
-            }
         }
     };
 
