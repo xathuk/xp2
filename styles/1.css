@@ -25,6 +25,12 @@ body {
     font-weight: 800;
 }
 
+.t-t {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+
 .hight-light-text-gry {
     background-color: #242430;
     padding: 1px;
@@ -177,6 +183,7 @@ header span {
 .card-title {
     font-weight: 700;
     margin-left: 0.75rem;
+    margin-right: 8px;
     margin-top: 0.5rem;
     font-family: 'Dosis', sans-serif;
     font-family: 'Quicksand', sans-serif;

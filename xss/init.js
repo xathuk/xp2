@@ -66,6 +66,25 @@ function theOne() {
                 Spotify: <p>${data.d.spotify.artist}: ${data.d.spotify.song} 🎶🎶</p>
                 </p>`
             }
+
+             // Online from >>>
+             if (data.d.active_on_discord_desktop === true) {
+                document.getElementById('onlineFrom').innerHTML = `<i class="fas fa-desktop" style="font-size:15px;" title="Online on Desktop"></i>`;
+            } else if (data.d.active_on_discord_desktop === false) {
+                document.getElementById('onlineFrom').innerHTML = '';
+            }
+
+            if (data.d.active_on_discord_mobile === true) {
+                document.getElementById('onlineFrom2').innerHTML = '<i class="fas fa-mobile-alt" style="font-size:15px;" title="Online on Mobile"></i>';
+            } else if (data.d.active_on_discord_mobile === false) {
+                document.getElementById('onlineFrom2').innerHTML = '';
+            }
+
+            if (data.d.active_on_discord_web === true) {
+                document.getElementById('onlineFrom3').innerHTML = '<i class="fab fa-chrome" style="font-size:15px;" title="Online on Discord web"></i>';
+            } else if (data.d.active_on_discord_web === false) {
+                document.getElementById('onlineFrom3').innerHTML = '';
+            }
         }
     };
 
